@@ -1,0 +1,12 @@
+[user]
+	name = aoantov
+	email = a.o.antov@gmail.com
+[core]
+	editor = vim
+[log]
+        date = format:"%a %d %b %Y %I:%M:%S %p"
+[blame]
+        date = format:"%d %b %Y"
+# [credential "https://github.com"]
+#	helper = 
+#	helper = 

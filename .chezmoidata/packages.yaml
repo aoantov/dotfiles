@@ -1,0 +1,14 @@
+packages:
+  ubuntu:
+    apt:
+    - 'jq'
+    - 'zsh'
+    - 'git'
+    - 'ssh'
+    - 'fzf'
+    - 'golang-1.23'
+    bash:
+    - 'curl https://get.volta.sh | bash'
+
+  
+
