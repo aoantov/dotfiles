@@ -1,6 +1,6 @@
 [user]
 	name = aoantov
-	email = a.o.antov@gmail.com
+#	email = a.o.antov@gmail.com
 [core]
 	editor = vim
 [log]
