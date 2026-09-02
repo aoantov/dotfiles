@@ -3,14 +3,24 @@
 
 set -e
 
+echo "Installing packages for Ubuntu..."
+
 sudo apt update
 sudo apt install -y \
 {{ range .packages.ubuntu.apt -}}
   {{ . | quote }} \
 {{ end -}}
 
+echo "Installing packages for Ubuntu using bash"
+
 {{ range .packages.ubuntu.bash -}}
    {{ . | quote }}
+{{ end -}}
+
+echo "Installing packages for Ubuntu using AppImage"
+
+{{ range .packages.ubuntu.appImage -}}
+   wget -P {{ .path | quote }} {{ .location | quote }} -O {{ .name | quote }}
 {{ end -}}
 
 {{ end -}}

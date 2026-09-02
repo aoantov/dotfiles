@@ -2,11 +2,16 @@ packages:
   ubuntu:
     apt:
       - "jq"
-      - "ssh"
       - "yq"
+      - "ssh"
       - "zsh"
       - "git"
       - "fzf"
+      - "vim"
       - "golang-1.23"
     bash:
       - "curl https://get.volta.sh | bash"
+    appImage:
+      - location: "https://github.com/neovim/neovim/releases/download/v0.12.5/nvim-linux-x86_64.appimage"
+        path: "~/bash_custom"
+        name: "nvim"
