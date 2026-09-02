@@ -9,6 +9,8 @@ packages:
       - "fzf"
       - "vim"
       - "golang-1.23"
+      - "python3"
+      - "google-chrome-stable"
     bash:
       - "curl https://get.volta.sh | bash"
     appImage:
