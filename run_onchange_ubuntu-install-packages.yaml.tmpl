@@ -12,7 +12,7 @@ sudo apt install -y \
 
 
 {{ range .packages.ubuntu.appImage -}}
-   wget  -O {{ .name | quote }} {{ .location | quote }}
+   wget {{ .location | quote }} {{- print "-O" }} {{ .name | quote }}
    mv {{ .name | quote }} {{ .path | quote }}/{{ .name | quote }}
    chmod +x {{ .path | quote }}/{{ .name | quote }}
 {{ end -}}
