@@ -1,11 +1,11 @@
-# Oh My Zsh
+# Zsh
 export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME="agnoster"
-source $ZSH/oh-my-zsh.sh
 
-# JiraCLI config
-# export DEFAULT_JIRA_SERVER=
-plugins=(git jirarc)
+ZSH_THEME="agnoster"
+
+plugins=(git)
+
+source $ZSH/oh-my-zsh.sh
 
 export JIRA=$HOME/go/bin
 export PATH=$PATH:/usr/lib/go-1.23/bin
@@ -34,3 +34,5 @@ alias gpp='git pull --prune'
 # alias awsume=". awsume"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+

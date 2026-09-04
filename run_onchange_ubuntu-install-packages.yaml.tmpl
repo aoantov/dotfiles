@@ -8,12 +8,12 @@ sudo apt update
 sudo apt install -y \
 {{ range .packages.ubuntu.apt -}}
   {{ . | quote }} \
-{{ end -}}
+{{ end }}
 
 
 {{ range .packages.ubuntu.appImage -}}
-   wget {{ .location | quote }} {{- print "-O" }} {{ .name | quote }}
-   mv {{ .name | quote }} {{ .path | quote }}/{{ .name | quote }}
+   wget {{- print " -O" }} {{ .name | quote }} {{ .location | quote }} 
+   mv {{ .name | quote }} {{ .path | quote }}
    chmod +x {{ .path | quote }}/{{ .name | quote }}
 {{ end -}}
 
