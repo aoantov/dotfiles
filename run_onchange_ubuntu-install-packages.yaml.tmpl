@@ -10,6 +10,10 @@ sudo apt install -y \
   {{ . | quote }} \
 {{ end }}
 
+{{ range .packages.ubuntu.bash -}}
+   bash {{ . | quote }}
+{{ end -}}
+
 
 {{ range .packages.ubuntu.appImage -}}
    wget {{- print " -O" }} {{ .name | quote }} {{ .location | quote }} 

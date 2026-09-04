@@ -1,6 +1,7 @@
 packages:
   ubuntu:
     apt:
+      - "curl"
       - "jq"
       - "yq"
       - "ssh"
@@ -10,6 +11,8 @@ packages:
       - "golang-1.23"
       - "python3"
       - "python3.14-venv"
+    bash:
+      - "curl https://get.volta.sh | bash"
     appImage:
       - location: "https://github.com/neovim/neovim/releases/download/v0.12.5/nvim-linux-x86_64.appimage"
         path: "bash_custom"
